@@ -31,18 +31,20 @@ header {
     flex-direction: row; /* Define a direção se é em Linha ou Coluna */
     /* padding: 0 15px 0 15px; */
     
+    position: relative;
+    
 }
 
 #header {
     display: flex;
-    width: 1500px;
+    width: 90%; /* Mudem aqui...*/
     max-width: 1500px;
     margin: auto;
-    justify-content: center; /*Centralizar o Título quando o Menu sumir*/
+    justify-content: space-between; /*Centralizar o Título quando o Menu sumir*/
+    align-items: center;
 }
 
 #logo {
-    width: 300px;
     color: white; /* Define a cor da fonte dos textos */
     font-size: 30px; /* Define o tamanho da fonte */
     text-transform: uppercase; /* Coloca em letras maiusculas */
@@ -57,9 +59,19 @@ header {
 #logo p {
     margin-left: 10px;
 }
+
+#botao-menu {
+    display: none;
+}
+
+label[for='botao-menu'] {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
 nav {
     display: flex;
-    margin-left: auto; 
 }
 
 a {
@@ -125,8 +137,61 @@ figure {
     text-align: center;
 }
 
+main {
+    position: relative;
+    width: 90%; /* Mudem aqui...*/
+    max-width: 1500px;
+    height: 500px;
+    margin: 0 auto 50px auto;
+    border: 1px solid black;
+}
+
+/* Position:
+
+Static
+Relative
+Absolute
+Fixed
+
+*/
+
+main > div {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 100px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: var(--cor2);
+    height: 350px;
+}
+
 @media (max-width: 930px) {
     nav {
-        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 90%;
+        top: 100%;        
+        margin-top: -200%;
+        transition: all 10s;
     }
+
+    a {
+        width: 100%;
+        background-color: var(--cor2);
+    }
+
+    label[for='botao-menu'] {
+        display: block;
+    }
+
+    #botao-menu:checked ~ nav {
+        margin-top: 0;
+    }
+
 }
