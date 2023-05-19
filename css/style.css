@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: Varsity;
-    src: url(../fonts/varsity_regular.ttf);
+    font-family: Mochary;
+    src: url(../fonts/Mochary_PERSONAL_USE_ONLY.ttf);
+}
+
+@font-face {
+    font-family: Young;
+    src: url(../fonts/Young\ Heart.ttf);
 }
 
 :root {
@@ -16,7 +21,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -118,15 +123,6 @@ figure {
     border-top: 2px solid white;
     padding: 10px 25px 0 25px;    
     text-align: center;
-}
-
-main {
-    width: 1500px;
-    height: 800px;
-    margin: 0 auto 50px auto;
-    background-color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
-
 }
 
 @media (max-width: 930px) {
