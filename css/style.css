@@ -184,6 +184,7 @@ footer {
     a {
         width: 100%;
         background-color: var(--cor2);
+        padding: 0;
     }
 
     label[for='botao-menu'] {
