@@ -120,6 +120,15 @@ figure {
     text-align: center;
 }
 
+main {
+    width: 1500px;
+    height: 800px;
+    margin: 0 auto 50px auto;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+
+}
+
 @media (max-width: 930px) {
     nav {
         display: none;
