@@ -24,39 +24,33 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    position: relative;
+    z-index: -3; /* Corrigir o sobreposição do menu. */
+}
+
 header {
     height: 70px;
     background-color: var(--cor2);
     display: flex;
-    flex-direction: row; /* Define a direção se é em Linha ou Coluna */   
-    position: relative;
-    z-index: 5;
-    
+    flex-direction: row;      
 }
 
 #header {
     display: flex;
-    width: 90%; /* Mudem aqui...*/
+    width: 90%;
     max-width: 1500px;
     margin: auto;
-    justify-content: space-between; /*Centralizar o Título quando o Menu sumir*/
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 4;
-    background-color: var(--cor1);
 }
 
 #logo {
-    color: white; /* Define a cor da fonte dos textos */
-    font-size: 30px; /* Define o tamanho da fonte */
-    text-transform: uppercase; /* Coloca em letras maiusculas */
-    display: flex; /* Torna os itens internos em flexiveis */
-    align-items: center; /* Alinha os itens no centro */
-    position: relative;
-    z-index: 6;
-    background-color: var(--cor2);
-
-
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase; 
+    display: flex; 
+    align-items: center; 
 }
 
 #logo img {
@@ -88,8 +82,8 @@ a {
     height: 70px;
     width: 105px;
     display: flex;
-    align-items: center; /* Centraliza na vertical */
-    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;
+    justify-content: center;
     padding: 0 10px 0 10px;
 }
 
@@ -106,8 +100,7 @@ figure {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    z-index: -20;
-    
+    z-index: -2; /* Corrigir o sobreposição do menu. */
 }
 
 #backgroundFilter {
@@ -138,7 +131,6 @@ figure {
     font-weight: bold;
     margin: 10px 0 10px 0;    
     text-align: center;
-    /* font-family: Varsity; */
 }
 #text-figure-3{
     border-top: 2px solid white;
@@ -148,7 +140,7 @@ figure {
 
 main {
     position: relative;
-    width: 90%; /* Mudem aqui...*/
+    width: 90%;
     max-width: 1500px;
     height: 500px;
     margin: 0 auto 50px auto;
@@ -175,11 +167,11 @@ footer {
     nav {
         flex-direction: column;
         position: absolute;
-        width: 100%;
-        top: 100%;        
+        width: 90%;
+        top: 70px;        
         margin-top: -200%;
-        transition: all 5s;
-        z-index: 1;
+        transition: all 1s;
+        z-index: -1; /* Corrigir o sobreposição do menu. */
     }
 
     a {
