@@ -28,9 +28,9 @@ header {
     height: 70px;
     background-color: var(--cor2);
     display: flex;
-    flex-direction: row; /* Define a direção se é em Linha ou Coluna */
-    /* padding: 0 15px 0 15px; */    
+    flex-direction: row; /* Define a direção se é em Linha ou Coluna */   
     position: relative;
+    z-index: 5;
     
 }
 
@@ -41,6 +41,9 @@ header {
     margin: auto;
     justify-content: space-between; /*Centralizar o Título quando o Menu sumir*/
     align-items: center;
+    position: relative;
+    z-index: 4;
+    background-color: var(--cor1);
 }
 
 #logo {
@@ -49,6 +52,11 @@ header {
     text-transform: uppercase; /* Coloca em letras maiusculas */
     display: flex; /* Torna os itens internos em flexiveis */
     align-items: center; /* Alinha os itens no centro */
+    position: relative;
+    z-index: 6;
+    background-color: var(--cor2);
+
+
 }
 
 #logo img {
@@ -97,6 +105,8 @@ figure {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: -20;
     
 }
 
@@ -165,10 +175,11 @@ footer {
     nav {
         flex-direction: column;
         position: absolute;
-        width: 90%;
+        width: 100%;
         top: 100%;        
         margin-top: -200%;
-        transition: all 1s;
+        transition: all 5s;
+        z-index: 1;
     }
 
     a {
