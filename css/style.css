@@ -175,16 +175,15 @@ footer {
     nav {
         flex-direction: column;
         position: absolute;
-        width: 90%;
+        width: 100%;
         top: 100%;        
         margin-top: -200%;
-        transition: all 10s;
+        transition: all 1s;
     }
 
     a {
         width: 100%;
         background-color: var(--cor2);
-        padding: 0;
     }
 
     label[for='botao-menu'] {
