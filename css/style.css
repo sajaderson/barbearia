@@ -141,11 +141,15 @@ figure {
 
 main {
     position: relative;
+    top: -30px;
     width: 90%;
     max-width: 1500px;
     height: 500px;
     margin: 0 auto 50px auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-top: 3px solid var(--cor1);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+    background-color: white;
 }
 
 main > div {
