@@ -17,16 +17,15 @@
             <input type="checkbox" id="botao-menu">
             <label for="botao-menu">&#9776;</label>
             <nav>
-                <a target="_blank" href="https://www.google.com">Sobre Nós</a>
-                <a target="_blank" href="https://youtube.com">Serviços</a>
-                <a target="_blank" href="https://to.senac.br">Barbeiros</a>
-                <a target="_blank" href="https://to.senac.br">Contato</a>
-                <a target="_blank" href="https://to.senac.br">Reserva</a>
+                <a href="#section-sobre">Sobre Nós</a>
+                <a href="#section-serviços">Serviços</a>
+                <a href="#section-profissionais">Profissionais</a>
+                <a href="#section-contato">Contato</a>
             </nav> <!-- Tag semântica para menu de navegação -->
         </div>
     </header> <!-- Tag semântica para cabeçalho -->
 
-    <figure>
+    <figure id="banner">
         <div id="backgroundFilter">
             <p class="text-figure-small" id="text-figure-1">
                 O lugar para
@@ -41,8 +40,57 @@
     </figure>
 
     <main>
-        <div></div>
-        <div></div>
+        <section id="section-sobre" class="main-section">
+            <h1>Sobre Nós</h1>
+            <p>A Barba Negra é a barbearia da sua época. Focada em excelência, a Barba Negra conta com tudo que o homem moderno precisa. Um ambiente confortável, descontraído e exclusivamente masculino, com cuidados para todos os estilos de barba e cabelo, além de serviços como massagem, podologia, estética masculina e dia do noivo. Uma barbearia premium, para cuidar do visual, tomar uma cerveja gelada, assistir aos seus esportes favoritos ou jogar uma partida de sinuca.</p>
+        </section>
+        <section id="section-serviços" class="main-section">
+            <h1>Serviços</h1>
+            <div id="serviços">
+                <div>
+                    <figure>
+                        <img src="imagens/barba.png" alt="">
+                        <figcaption>Cabelo e Barba</figcaption>
+                    </figure>                    
+                </div>
+                <div>
+                    <figure>
+                        <img src="imagens/massagem.png" alt="">
+                        <figcaption>Massagem</figcaption>
+                    </figure>                    
+                </div>
+                <div>
+                    <figure>
+                        <img src="imagens/cervejas.png" alt="">
+                        <figcaption>Bar</figcaption>
+                    </figure>                    
+                </div>
+                <div>
+                    <figure>
+                        <img src="imagens/snooker.png" alt="">
+                        <figcaption>Sinuca</figcaption>
+                    </figure>                    
+                </div>
+                <div>
+                    <figure>
+                        <img src="imagens/controle-de-video-game.png" alt="">
+                        <figcaption>Games</figcaption>
+                    </figure>                    
+                </div>
+                <div>
+                    <figure>
+                        <img src="imagens/cartas-de-poker.png" alt="">
+                        <figcaption>Poker</figcaption>
+                    </figure>                    
+                </div>
+            </div>
+        </section>
+        <section id="section-profissionais" class="main-section">
+            <h1>Profissionais</h1>
+        </section>
+        <section id="section-contato" class="main-section">
+            <h1>Contato</h1>
+        </section>
     </main>
 
     <footer>
