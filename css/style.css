@@ -35,6 +35,7 @@ html {
 body{
     position: relative;
     z-index: -3;
+    background-color: var(--cor3);
 }
 header {
     height: 70px;
@@ -211,10 +212,16 @@ main {
 
 #serviços div:hover .img-services{
     background-color: var(--cor1);
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 #serviços div:hover figcaption{
     color: var(--cor5);
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 #profissionais {
@@ -232,6 +239,11 @@ main {
     flex-direction: column;
 }
 
+#profissionais > div:hover img{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 #profissionais figure {
     height: 250px;
     width: 200px;
@@ -240,6 +252,9 @@ main {
 
 #profissionais img {
     width: 100%;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 #profissionais p {
@@ -253,9 +268,94 @@ main {
     width: 200px;
 }
 
+#contato {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+#contato > p {
+    width: 47%;
+    min-width: 200px;
+    text-align: justify;
+    
+    border: 1px solid green;
+}
+
+#contato > div {
+    width: 47%;
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    border: 1px solid green;
+}
+
+#form-nome {
+    display: flex;    
+    flex-direction: column;
+    width: 49%;
+}
+
+#form-email {
+    display: flex;    
+    flex-direction: column;
+    width: 49%;    
+}
+
+#form-msg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 footer {
     background-color: var(--cor2);
     height: 350px;
+}
+
+#footer-limit {
+    width: 95%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+
+#footer-limit > div {
+    border: 1px solid green;
+    width: 49%;
+}
+
+#footer-end{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer-end h2{
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+}
+
+#footer-end > p {
+    width: 49%;
+    border: 1px solid red;
+}
+
+#footer-redes{
+
 }
 
 @media (max-width: 1090px) {
